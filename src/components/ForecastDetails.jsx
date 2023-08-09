@@ -4,7 +4,9 @@ function ForecastDetails(props) {
   const { date, temperature, humidity, wind } = props;
   const { min, max } = temperature;
   const { speed: windspeed, direction } = wind;
+
   const formattedDate = new Date(date).toDateString();
+
   return (
     <div className="forecast-details">
       <div
