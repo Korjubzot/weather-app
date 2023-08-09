@@ -6,7 +6,7 @@ import ForecastSummaries from "../../components/ForecastSummaries";
 describe("ForecastSummaries", () => {
   const validProps = [
     {
-      date: 1111111,
+      date: "Thu Jan 01 1970",
       description: "Stub description 1",
       icon: "stubIcon1",
       temperature: {
@@ -15,7 +15,7 @@ describe("ForecastSummaries", () => {
       },
     },
     {
-      date: 2222222,
+      date: "Mon Jan 26 1970",
       description: "Stub description 2",
       icon: "stubIcon2",
       temperature: {
