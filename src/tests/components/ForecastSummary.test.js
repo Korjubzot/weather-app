@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-filename-extension */
-/* eslint-disable prettier/prettier */
 import React from "react";
 import { render } from "@testing-library/react";
 import ForecastSummary from "../../components/ForecastSummary";
@@ -8,11 +7,12 @@ describe("Forecast Summary", () => {
   const validProps = {
     date: "Thu Jan 01 1970",
     description: "Stub description",
-    icon: "stubIcon",
+    icon: "800",
     temperature: {
       min: 12,
       max: 22,
     },
+    onSelect: () => {},
   };
 
   it("renders correctly", () => {
@@ -22,6 +22,7 @@ describe("Forecast Summary", () => {
         description={validProps.description}
         icon={validProps.icon}
         temperature={validProps.temperature}
+        onSelect={validProps.onSelect}
       />
     );
 
