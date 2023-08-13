@@ -5,7 +5,7 @@ import App from "../components/App";
 import forecast from "../data/forecast.json";
 
 describe("App", () => {
-  xtest("renders app correctly)", () => {
+  xtest("renders app correctly", () => {
     render(<App location={forecast.location} />);
     const h1Element = screen.getByText(/Manchester, UK/i);
     expect(h1Element).toBeInTheDocument();
