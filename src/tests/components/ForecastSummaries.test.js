@@ -4,35 +4,43 @@ import { render } from "@testing-library/react";
 import ForecastSummaries from "../../components/ForecastSummaries";
 
 describe("ForecastSummaries", () => {
-  const validProps = [
-    {
-      date: "Thu Jan 01 1970",
-      description: "Stub description 1",
-      icon: "stubIcon1",
-      temperature: {
-        max: 22,
-        min: 12,
+  const validProps = {
+    forecasts: [
+      {
+        date: 111111,
+        description: "Stub description 1",
+        icon: 800,
+        temperature: {
+          max: 22,
+          min: 12,
+        },
       },
-    },
-    {
-      date: "Mon Jan 26 1970",
-      description: "Stub description 2",
-      icon: "stubIcon2",
-      temperature: {
-        max: 24,
-        min: 13,
+      {
+        date: 222222,
+        description: "Stub description 2",
+        icon: 800,
+        temperature: {
+          max: 24,
+          min: 13,
+        },
       },
-    },
-  ];
+    ],
+    onForecastSelect: () => {},
+  };
 
   it("renders correctly", () => {
-    const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
+    const { asFragment } = render(
+      <ForecastSummaries
+        forecasts={validProps.forecasts}
+        onForecastSelect={validProps.onForecastSelect}
+      />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("tests for length of forecasts array", () => {
     const { getAllByTestId } = render(
-      <ForecastSummaries forecasts={validProps} />
+      <ForecastSummaries forecasts={validProps.forecasts} />
     );
     expect(getAllByTestId("forecast-summary")).toHaveLength(2);
   });
