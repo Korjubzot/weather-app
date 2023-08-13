@@ -1,7 +1,7 @@
 import React from "react";
 
-function ForecastDetails(props) {
-  const { date, temperature, humidity, wind } = props;
+function ForecastDetails({ forecast }) {
+  const { date, temperature, humidity, wind } = forecast;
   const { min, max } = temperature;
   const { speed: windspeed, direction } = wind;
 
@@ -19,13 +19,13 @@ function ForecastDetails(props) {
         className="forecast-details__minTemp"
         data-testid="forecast-details__minTemp"
       >
-        {min}&deg;C
+        Minimum: {min}&deg;C
       </div>
       <div
         className="forecast-details__maxTemp"
         data-testid="forecast-details__maxTemp"
       >
-        {max}&deg;C
+        Maximum: {max}&deg;C
       </div>
       <div
         className="forecast-details__humidity"
