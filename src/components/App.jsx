@@ -30,12 +30,8 @@ function App() {
   }, []);
 
   return (
-    <div className="weather-app">
-      <LocationDetails
-        city={location.city}
-        country={location.country}
-        data-testid="location"
-      />
+    <div className="weather-app" data-testid="location">
+      <LocationDetails city={location.city} country={location.country} />
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}

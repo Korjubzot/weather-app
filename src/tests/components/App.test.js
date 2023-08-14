@@ -1,12 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
-import { render, screen } from "@testing-library/react";
 import React from "react";
+import { render } from "@testing-library/react";
 import App from "../../components/App";
 
-describe("App", () => {
-  xtest("renders correctly", () => {
-    render(<App />);
-    const locationElement = screen.getByTestId("location");
-    expect(locationElement).toBeInTheDocument();
-  });
+test("renders App component", () => {
+  const { getByTestId } = render(<App />);
+
+  const locationElement = getByTestId("location");
+  expect(locationElement).toBeInTheDocument();
 });
