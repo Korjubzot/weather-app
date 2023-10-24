@@ -4,7 +4,7 @@
 
 The Weather App is a user-friendly tool that allows users to quickly and easily access current weather information for any location worldwide. With real-time weather data, users can stay informed about the latest weather conditions and make informed decisions for their daily activities. This was built as part of the Command Shift course as a portfolio demonstration of React front-end development.
 
-![Screenshot](/path/to/screenshot.png)
+![Screenshot](/screenshots/Screenshot%202023-10-25%20at%2007.40.03.png)
 
 ## Features
 
@@ -58,7 +58,6 @@ To use Weather App, clone the repo and run the development server in your local 
 - **Weather Data API:** [CommandShift Weather API](https://cmd-shift-weather-app.onrender.com/)
 - **Icons:** [FontAwesome](https://fontawesome.com/)
 
-
 ## Licensing
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
@@ -68,4 +67,3 @@ This project is licensed under the MIT License. For more details, see the [LICEN
 If you have any questions, suggestions, or issues, please feel free to contact me:
 
 - Email: [korjubzot@gmail.com](mailto:korjubzot@gmail.com)
-
