@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Weather App is a user-friendly tool that allows users to quickly and easily access current weather information for any location worldwide. With real-time weather data, users can stay informed about the latest weather conditions and make informed decisions for their daily activities. This was built as part of the Command Shift course as a portfolio demonstration of React front-end development.
+The Weather App is a user-friendly tool that allows users to quickly and easily access current weather information for any location in the United Kingdom. With real-time weather data, users can stay informed about the latest weather conditions and make informed decisions for their daily activities. This was built as part of the Command Shift course as a portfolio demonstration of React front-end development.
 
 ![Screenshot](/screenshots/Screenshot%202023-10-25%20at%2007.40.03.png)
 
