@@ -20,7 +20,7 @@ The Weather App is a user-friendly tool that allows users to quickly and easily 
 
 ## How to Use
 
-To use Weather App, clone the repo and run the development server in your local environment.
+To use Weather App, there are two options. You can use the [live site](https://weather-app-bwalker.netlify.app/) for the easiest use, or clone the repo and run the development server in your local environment.
 
 1. Clone the repository:
 
