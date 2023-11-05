@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 // eslint-disable-next-line import/no-extraneous-dependencies
 import axios from "axios";
 
@@ -26,14 +27,12 @@ const getForecast = (
 
       if (status === 404) {
         setErrorMessage("No such city or town. Try again!");
-        console.error("Invalid location", error);
       }
       if (status === 500) {
         setErrorMessage(
           "Oopsie woopsie! I made a wittle fucky wucky uwu~",
           error
         );
-        console.error("Error: problem with server");
       }
     });
 };
