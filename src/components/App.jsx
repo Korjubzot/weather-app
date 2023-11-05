@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import "../styles/App.css";
 import "../styles/ForecastSummaries.css";
 import React, { useEffect, useState } from "react";
