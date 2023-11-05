@@ -30,7 +30,7 @@ const getForecast = (
       }
       if (status === 500) {
         setErrorMessage(
-          "Oopsie woopsie! I made a wittle fucky wucky uwu~",
+          "An error occurred while processing your request. Please try again later.",
           error
         );
       }
